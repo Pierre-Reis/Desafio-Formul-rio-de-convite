@@ -24,3 +24,11 @@ aside{
     margin-block: 1rem .25rem;
   }
 }
+
+main{
+  padding: 5rem 8.125rem;
+
+  & .main-container{
+    max-width: 50rem;
+  }
+}

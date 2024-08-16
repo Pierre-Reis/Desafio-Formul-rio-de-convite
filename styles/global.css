@@ -51,6 +51,8 @@
 
 body{
   max-width: 76.25rem;
+  font: var(--text-sm);
+  color: var(--text-body);
   background-color: var(--shape-body);
 }
 
@@ -59,7 +61,26 @@ h1{
   color: var(--pink);
 }
 
+h2{
+  font: var(--title-md);
+  color: var(--text-heading);
+}
+
 p{
   font: var(--text);
   color: var(--text-heading);
+}
+
+legend{
+  font: var(--title-sm);
+  color: var(--text-heading);
+}
+
+.flex{
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1{
+  flex: 1;
 }
