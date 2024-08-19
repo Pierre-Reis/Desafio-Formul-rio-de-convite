@@ -1,0 +1,52 @@
+.radio-wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+}
+
+.radio-inner{
+  margin: .25rem;
+  border-radius: .25rem;
+
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  gap: .5rem;
+
+  padding: .25rem;
+
+  position: relative;
+
+  & input,
+  & input:focus,
+  & input:hover{
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & p{
+    color: var(--input-placeholder);
+  }
+
+  &:hover, &:focus-within{
+    background-color: var(--input-stroke);
+    border-radius: .25rem;
+  }
+
+  &:has(:checked){
+    background-color: var(--input-stroke);
+    & p{
+      color: var(--text-heading);
+    }
+
+    & svg{
+      stroke: var(--brand-light);
+      background-color: var(--input-stroke);
+    }
+  }
+
+}
