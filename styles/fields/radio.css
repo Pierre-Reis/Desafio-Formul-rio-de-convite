@@ -5,6 +5,11 @@
   background-color: var(--input-base);
   border: 1px solid var(--input-stroke);
   border-radius: .5rem;
+
+  &:focus,
+  &:hover{
+    outline: 1px solid var(--brand-light);
+  }
 }
 
 .radio-inner{

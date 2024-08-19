@@ -50,11 +50,12 @@
 }
 
 body{
-  max-width: 96rem;
+  max-width: 80rem;
   width: 100%;
   font: var(--text-sm);
   color: var(--text-body);
-  background-color: var(--shape-body);
+  background-color: var(--shape-background);
+  overflow: hidden;
 }
 
 h1{
@@ -84,4 +85,8 @@ legend{
 
 .flex-1{
   flex: 1;
+}
+
+.brand-light{
+  color: var(--brand-light);
 }
