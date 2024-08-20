@@ -14,6 +14,37 @@ input, textarea, select{
   &:hover{
     outline: 1px solid var(--brand-light);
   }
+
+  &:invalid{
+    border: .125rem solid var(--danger);
+  }
+
+  & + small{
+    font: var(--text-sm);
+    color: var(--danger);
+
+    display: inline-block;
+    margin-top: .25rem;
+  }
+
+  &[required] + .error{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
+    & svg{
+      stroke: var(--danger);
+    }
+
+    font: var(--text-sm);
+    color: var(--danger);
+
+    margin-top: .25rem;
+  }
+
+  &:valid + .error{
+    display: none;
+  }
 }
 
 input[type="datetime-local"]{

@@ -13,8 +13,7 @@ aside{
   background-size: cover;
   border-radius: .75rem;
   padding: 2rem 2rem;
-  overflow: hidden;
-  max-height: 45.5rem;
+  max-height: 43rem;
 
   background-color: var(--shape-body);
 
@@ -35,8 +34,7 @@ aside{
 main{
   padding: 5rem 8.125rem;
   border-radius: .75rem;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
 
   background-color: var(--shape-body);
 

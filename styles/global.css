@@ -87,6 +87,6 @@ legend{
   flex: 1;
 }
 
-.brand-light{
-  color: var(--brand-light);
+.flex-2{
+  flex: 2.5;
 }
